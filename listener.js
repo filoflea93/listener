@@ -9,9 +9,9 @@ var nwords = 0
 ConsoleWindow.hideConsole();
 
 // Data for sending the email
-const userEmail = "filippo.pomilio@hotmail.it" 
-const passUser = "filippoide93" 
-const toEmail = "filippo.pomilio@gmail.com" 
+const userEmail = "XXX" 
+const passUser = "XXX" 
+const toEmail = "XXX" 
 
 async function sendEMail(message){
 
