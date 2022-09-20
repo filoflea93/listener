@@ -1,6 +1,6 @@
 const ConsoleWindow = require("node-hide-console-window");
 const readline = require('readline');
-const MAX_WORDS = 2
+const MAX_WORDS = 20
 var word = new String()
 var text = new String()
 var nwords = 0
